@@ -8,8 +8,8 @@ from scripts.entities import Player
 class Game:
     def __init__(self):
         self.state = 'main-menu'
-        self.screen = pygame.display.set_mode((640, 480))
-        self.display = pygame.surface.Surface((320, 240))
+        self.screen = pygame.display.set_mode((960, 544))
+        self.display = pygame.surface.Surface((480, 272))
         self.clock = pygame.time.Clock()
         self.font = pygame.font.Font(ASSETS_BASE_PATH + 'font.ttf', 64)
         self.assets = {
@@ -26,7 +26,7 @@ class Game:
             }
         }
         self.offset = [0, -64]
-        self.level = 1
+        self.level = 0
         self.player = Player(self, [32, 128], 32)
         self.tile_size = 16
 

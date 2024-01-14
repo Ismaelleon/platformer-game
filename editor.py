@@ -7,8 +7,8 @@ from scripts.utils import load_image
 
 class Editor:
     def __init__(self):
-        self.screen = pygame.display.set_mode((640, 480))
-        self.display = pygame.surface.Surface((320, 240))
+        self.screen = pygame.display.set_mode((960, 544))
+        self.display = pygame.surface.Surface((480, 272))
         self.crop_pos = [0, 0]
         self.level = 0
         self.assets = {
